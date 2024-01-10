@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: hsl(30, 38%, 92%);
+  font-size: 14px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  margin: 30px 0;
+  padding: 0 30px;
+}
+
+.grid {
+  max-width: 600px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.img img {
+  max-width: 100%;
+  display: inherit;
+}
+
+.card-content {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-category {
+  color: #6c7289;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 5px;
+}
+
+.product-name {
+  color: #1c232b;
+  font-family: 'Fraunces', sans-serif;
+  font-size: 32px;
+  line-height: 32px;
+}
+
+.product-desc {
+  color: #6c7289;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 23px;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+}
+
+.sale-price {
+  color: #3d8168;
+  font-family: 'Fraunces', sans-serif;
+  font-size: 32px;
+  padding-right: 20px;
+}
+
+.original-price {
+  color: #6c7289;
+  font-size: 13px;
+  text-decoration: line-through;
+}
+
+button.cta {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #3d8168;
+  border: none;
+  padding: 15px 0;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+  width: 100%;
+}
+
+button.cta:hover {
+  background-color: #265946;
+}
+
+.cta {
+  display: inline-flex;
+  padding-bottom: 1px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 11px;
+}
+
+@media only screen and (max-width: 625px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .img img {
+    max-height: 450px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .card-content {
+    display: block;
+  }
+
+  .product-category,
+  .product-name,
+  .product-desc,
+  .price {
+    padding-bottom: 25px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .container {
+    margin: 15px auto;
+    padding: 0 15px;
+  }
+
+  .img img {
+    max-height: 290px;
+  }
+
+  .card-content {
+    padding: 24px;
+  }
+
+  .product-category,
+  .product-name,
+  .product-desc,
+  .price {
+    padding-bottom: 15px;
+  }
+
+  .product-name {
+    font-size: 28px;
+  }
+
+  .product-desc {
+    font-size: 12px;
+  }
+
+  .sale-price {
+    font-size: 28px;
+  }
+
+  button.cta {
+    padding: 13px 0;
+    font-size: 12px;
+  }
+}
