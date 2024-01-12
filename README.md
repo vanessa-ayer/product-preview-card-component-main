@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: 
+- Solution URL: https://www.frontendmentor.io/solutions/product-preview-card-component-jVOJ9Fv-6n
 - Live Site URL: https://vanessa-ayer.github.io/product-preview-card-component-main/
 
 ### Built with
